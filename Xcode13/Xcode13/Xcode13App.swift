@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVKit
 
 @main
 struct Xcode13App: App {
@@ -19,7 +20,8 @@ struct Xcode13App: App {
         .onChange(of: self.scenePhase) { (newScenePhase) in
             switch newScenePhase {
                 case .active:
-                    print("App is active")
+                    print("App active")
+                    run()
 
                 case .inactive, .background:
                     break
@@ -28,6 +30,9 @@ struct Xcode13App: App {
                     fatalError()
             }
         }
+
     }
+
+
 }
 
