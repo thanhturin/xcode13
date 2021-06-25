@@ -13,6 +13,8 @@
 		FF0027B526837D0D0093BFFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF0027B426837D0D0093BFFF /* Preview Assets.xcassets */; };
 		FF0027BF26837D0D0093BFFF /* Xcode13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0027BE26837D0D0093BFFF /* Xcode13Tests.swift */; };
 		FF0027C926837D0D0093BFFF /* Xcode13UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0027C826837D0D0093BFFF /* Xcode13UITests.swift */; };
+		FF43FE89268583E800061ED7 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43FE88268583E800061ED7 /* Playground.swift */; };
+		FF43FE8B2685873200061ED7 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF43FE8A2685873200061ED7 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		FF0027BE26837D0D0093BFFF /* Xcode13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode13Tests.swift; sourceTree = "<group>"; };
 		FF0027C426837D0D0093BFFF /* Xcode13UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xcode13UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0027C826837D0D0093BFFF /* Xcode13UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode13UITests.swift; sourceTree = "<group>"; };
+		FF43FE88268583E800061ED7 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		FF43FE8A2685873200061ED7 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +96,12 @@
 		FF0027AC26837D0C0093BFFF /* Xcode13 */ = {
 			isa = PBXGroup;
 			children = (
+				FF43FE88268583E800061ED7 /* Playground.swift */,
 				FF0027AD26837D0C0093BFFF /* Xcode13App.swift */,
 				FF0027AF26837D0C0093BFFF /* ContentView.swift */,
 				FF0027B126837D0D0093BFFF /* Assets.xcassets */,
 				FF0027B326837D0D0093BFFF /* Preview Content */,
+				FF43FE8A2685873200061ED7 /* Storyboard.storyboard */,
 			);
 			path = Xcode13;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			files = (
 				FF0027B526837D0D0093BFFF /* Preview Assets.xcassets in Resources */,
 				FF0027B226837D0D0093BFFF /* Assets.xcassets in Resources */,
+				FF43FE8B2685873200061ED7 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,7 @@
 			files = (
 				FF0027B026837D0C0093BFFF /* ContentView.swift in Sources */,
 				FF0027AE26837D0C0093BFFF /* Xcode13App.swift in Sources */,
+				FF43FE89268583E800061ED7 /* Playground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
