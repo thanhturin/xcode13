@@ -1,0 +1,124 @@
+Prepapration:
+    - 2 chromes windows opening github PR
+    - Xcode 13 opening 2 projects
+    - Prepare appdelegate 
+    - Slide
+    - Close all other apps, specially Mattermost, Seatalk, Zalo, Messenger 
+
+1. Overview
+    1.1 App size
+        - Download: https://developer.apple.com/download/all/?q=xcode
+    1.2 UI Changes
+        - Hide extension
+            - Preferences --> General --> File extension (Behind checkbox "Locked Files")
+        - Minimize error
+            - Preferences --> General --> Issues: Show Minimized (Second line)
+
+2.1. Autocompletion
+
+    2.1.1 auto import modules
+        ```
+            let color = UIColor.red
+            let text = Text("")
+            let player: AVPlayer
+        ```
+        - Tip: This will only work with protocols that are already imported somewhere else in your project. It won’t read all types in unrelated protocols.
+
+    2.1.2 unwrap optional 
+        - func setCornerRadius(for view: UIView, cornerRadius: CGFloat?)
+
+    2.1.3 autocomplete properties inside properties
+        - As you’re typing view.corn Xcode will offer view.layer.cornerRadius as a completion
+        - 2 layers only
+        ```
+        struct AAA {
+            let name: String
+        }
+
+        struct BBB {
+            let aaa: AAA
+        }
+
+        struct CCC {
+            let bbb: BBB
+        }
+
+        let bbb = BBB(aaa: AAA(name: "aaa"))
+        let ccc = CCC(bbb: bbb)
+        ```
+
+    2.1.4 for loop for flural and singular
+        ```
+            for person in people {
+                <#body#>
+            }
+
+            for baby in babies {
+
+            }
+
+            for fish in fish {
+                
+            }
+        ```
+            
+    2.1.5 switch case
+        ```
+        enum Fruit {
+            case apple
+            case banana
+            case orange
+
+            var color: UIColor {
+                switch self {
+                    
+                }
+            }
+        }
+
+        func handleResponse(_ completion: Result<Int, Error>) {
+            switch completion {
+
+            }
+        }
+        ```
+
+2.2. Breakpoint
+    2.2.1 Column breakpoint
+        - Right click --> Show Code Actions
+        - Check after I squared a number, how many is greater than 10.
+        ```
+        func run() {
+            var arr = [1, 2, 3, 4, 5, 6]
+            let result = arr.map { $0 * $0 }.filter { $0 > 10 }.count
+        }
+        ```
+    2.2.2 Symnolic breakpoint (optional)
+        - Add breakpoint for all function with the name matching a regex
+
+    2.2.3 Runtime breakpoint (optional)
+        - Like check Mainthread while updating UI
+
+2.3 VIM 
+    - Text Editing --> Editing --> Last option 
+
+2.4. SwiftUI preview in landscape
+
+2.5. Storyboad
+    - Preview different phone layout 
+    - Revamp UIButton (corner radius)
+
+3. Source control (https://developer.apple.com/videos/play/wwdc2021/10205/)
+    - Source control is not new in Xcode 
+    - But there are few interesting improvement in this version
+
+    3.1 Code review
+        - Highlight changes more indicatively
+        - See all changes in `Changes` tab on Source Control Navigator
+            - It's not new, it's just more visible
+        - Can choose inline for side-by-side
+        - Jump to changes
+        - Compare between arbitrary commits 
+    3.1 Pull request
+
+4. Cloud build
